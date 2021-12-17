@@ -10,6 +10,8 @@ module.exports = {
     },
   },
   setupFilesAfterEnv: ["./src/jest.setup.ts"],
+  collectCoverage: true,
+  coverageReporters: ["text", "html"],
   coverageThreshold: {
     global: {
       branches: 100,
