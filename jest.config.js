@@ -2,16 +2,16 @@
 
 // eslint-disable-next-line no-undef
 module.exports = {
-  preset: "ts-jest",
-  testEnvironment: "jsdom",
+  preset: 'ts-jest',
+  testEnvironment: 'jsdom',
   globals: {
-    "ts-jest": {
-      tsconfig: "./tsconfig.jest.json",
+    'ts-jest': {
+      tsconfig: './tsconfig.jest.json',
     },
   },
-  setupFilesAfterEnv: ["./src/jest.setup.ts"],
+  setupFilesAfterEnv: ['./src/jest.setup.ts'],
   collectCoverage: true,
-  coverageReporters: ["text", "html"],
+  coverageReporters: ['text', 'html'],
   coverageThreshold: {
     global: {
       branches: 100,
