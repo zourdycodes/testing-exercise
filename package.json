@@ -10,7 +10,8 @@
     "test:ci": "jest --coverage --silent --ci",
     "prepare": "husky install",
     "prettier": "prettier {*,src/*,src/**/*} --write --ignore-unknown",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "release": "standard-version"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
@@ -22,6 +23,7 @@
     "next": "12.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "standard-version": "^9.3.2",
     "swr": "^1.1.1",
     "yup": "^0.32.11"
   },

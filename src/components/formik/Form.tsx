@@ -59,10 +59,7 @@ export function MultiStepForm({ onSubmit }: MultiStepFormProps) {
             money: 0,
             description: '',
           }}
-          onSubmit={(values) => {
-            // await sleep(500);
-            onSubmit(values);
-          }}
+          onSubmit={(values) => onSubmit(values)}
         >
           <FormikStep
             label="Personal Data"
